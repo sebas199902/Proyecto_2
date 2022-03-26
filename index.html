@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Proyecto 2</title>
+</head>
+
+<body>
+    <main class="contenedor">
+        <div class="header">
+            <h1 id="title">Formulario de mejoras</h1>
+            <p id="description">Gracias por ayudarme a mejorar mi pagina web</p>
+        </div>
+        <form id="survey-form">
+            <div class="cuadro-form">
+                <label id="name-label" for="name">Nombre</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="cuadro-form">
+                <label id="email-label" for="email">Correo electronico</label>
+                <input class="input" type="email" id="email" name="email" placeholder="Ingresa tu correo electronico">
+            </div>
+            <div class="cuadro-form">
+                <label id="number-label" for="number">Edad (opcional)</label>
+                <input class="input" type="number" id="number" name="number" placeholder="Ingresa tu edad" min="0" max="100">
+            </div>
+            <div class="cuadro-form">
+                <p class="p-form">Cual es la razon por la que sigues estos cursos ?</p>
+                <select name="razon" id="dropdown" required>
+                    <option disabled selected value> Selecciona la razon</option>
+                    <option value="trabajo">Conseguir un trabajo</option>
+                    <option value="estudiar">Estudios</option>
+                    <option value="hobby">Hobby</option>
+                    <option value="otros">Otras razones</option>
+                </select>
+            </div>
+            <div class="cuadro-form">
+                <p class="p-form">Nos recomendarias con otras personas ?</p>
+                <label for="recommendations">
+                    <input type="radio" id="recommendations" name="recommendations">
+                    Tal vez los recomendaria
+                </label>
+                <label for="recommendations">
+                    <input type="radio" id="recommendations" name="recommendations">
+                    Si los recomendaria
+                </label>
+                <label for="recommendations">
+                    <input type="radio" id="recommendations" name="recommendations">
+                    No los recomendaria
+                </label>
+            </div>
+            <div class="cuadro-form">
+                <p class="p-form">Cual fue tu parte favorita del curso ?</p>
+                <label for="seleccion">
+                    <input type="checkbox" id="seleccion" name="seleccion">
+                    Proyectos Front-end
+                </label>
+                <label for="seleccion">
+                    <input type="checkbox" id="seleccion" name="seleccion">
+                    Proyectos Back-end
+                </label>
+                <label for="seleccion">
+                    <input type="checkbox" id="seleccion" name="seleccion">
+                    Desafios
+                </label>
+                <label for="seleccion">
+                    <input type="checkbox" id="seleccion" name="seleccion">
+                    Visualizacion de datos
+                </label>
+            </div>
+            <div class="cuadro-form">
+                <p class="p-form">Algun comentario ?</p>
+                <textarea name="comment" id="comment" placeholder="Comenta aqui ..."></textarea>
+            </div>
+            <div class="boton">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
